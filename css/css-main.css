@@ -1,0 +1,520 @@
+/* =======================================================
+*   Author: Saksham Shekher aka OshekharO
+*   Only For Educational Purpose
+* ======================================================= */
+@charset "UTF-8";
+
+html {
+  font-family: "Muli", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  background: #fff;
+  color: #67607c;
+}
+
+body {
+  margin: 0;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+a {
+  color: #583abc;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #583abc;
+  text-decoration: underline;
+}
+
+@supports (display:block) {}
+
+ul {
+  margin: 0 0 20px 0;
+}
+
+h3 {
+  margin: 0 0 20px 0;
+  font-family: Muli, sans-serif;
+  font-weight: 500;
+  color: #000;
+  text-transform: none;
+}
+
+h3 {
+  font-size: 1.375rem;
+  line-height: 1.4;
+}
+
+ul {
+  padding-left: 30px;
+}
+
+::selection {
+  background: #39f;
+  color: #fff;
+  text-shadow: none;
+}
+
+:root {
+  --uk-breakpoint-s: 640px;
+  --uk-breakpoint-m: 960px;
+  --uk-breakpoint-l: 1200px;
+  --uk-breakpoint-xl: 1600px;
+}
+
+.uk-link-muted a {
+  color: #86848b;
+}
+
+.uk-link-muted a:hover {
+  color: #67607c;
+}
+
+.uk-section {
+  box-sizing: border-box;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+@media (min-width:960px) {
+  .uk-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+.uk-section::after,
+.uk-section::before {
+  content: "";
+  display: table;
+}
+
+.uk-section::after {
+  clear: both;
+}
+
+.uk-section>:last-child {
+  margin-bottom: 0;
+}
+
+.uk-section-muted {
+  background: #f9f9fc;
+}
+
+.uk-container {
+  box-sizing: content-box;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width:640px) {
+  .uk-container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width:960px) {
+  .uk-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.uk-container::after,
+.uk-container::before {
+  content: "";
+  display: table;
+}
+
+.uk-container::after {
+  clear: both;
+}
+
+.uk-container>:last-child {
+  margin-bottom: 0;
+}
+
+.uk-container .uk-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.uk-container-xsmall {
+  max-width: 650px;
+}
+
+.uk-container-small {
+  max-width: 800px;
+}
+
+.uk-card {
+  position: relative;
+  box-sizing: border-box;
+  transition: box-shadow .1s ease-in-out;
+}
+
+.uk-card-body {
+  padding: 30px 30px;
+}
+
+@media (min-width:1200px) {
+  .uk-card-body {
+    padding: 40px 40px;
+  }
+}
+
+.uk-card-body::after,
+.uk-card-body::before {
+  content: "";
+  display: table;
+}
+
+.uk-card-body::after {
+  clear: both;
+}
+
+.uk-card-body>:last-child {
+  margin-bottom: 0;
+}
+
+.uk-card-default {
+  background: #fff;
+  color: #67607c;
+  box-shadow: 0 2px 8px rgba(88, 58, 188, .08);
+}
+
+.uk-card-default.uk-card-hover:hover {
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(88, 58, 188, .09);
+}
+
+.uk-card-category {
+  padding: 28px 28px 26px;
+}
+
+.uk-card-category+.uk-card-category {
+  margin-top: 28px;
+}
+
+.uk-article::after,
+.uk-article::before {
+  content: "";
+  display: table;
+}
+
+.uk-article::after {
+  clear: both;
+}
+
+.uk-article>:last-child {
+  margin-bottom: 0;
+}
+
+.uk-article-meta {
+  font-size: .8125rem;
+  line-height: 1.4;
+  color: #86848b;
+}
+
+.uk-article-meta .uk-avatar-small {
+  margin-right: 15px;
+  max-width: 36px;
+}
+
+.uk-article-content {
+  font-size: 1.0625rem;
+}
+
+@supports (transform:scale(0)) {}
+
+.uk-navbar-container>::after,
+.uk-navbar-container>::before {
+  display: none !important;
+}
+
+.uk-subnav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  padding: 0;
+  list-style: none;
+}
+
+.uk-subnav>* {
+  flex: none;
+  padding-left: 20px;
+  position: relative;
+}
+
+.uk-subnav>*>:first-child {
+  display: block;
+  color: #86848b;
+  font-size: .875rem;
+  text-transform: none;
+  transition: .1s ease-in-out;
+  transition-property: color, background-color;
+}
+
+.uk-subnav>*>a:focus,
+.uk-subnav>*>a:hover {
+  color: #67607c;
+  text-decoration: none;
+  outline: 0;
+}
+
+:root {
+  --uk-leader-fill-content: .;
+}
+
+[class*=uk-width] {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+}
+
+.uk-text-small {
+  font-size: .875rem;
+  line-height: 1.5;
+}
+
+.uk-text-muted {
+  color: #86848b !important;
+}
+
+@supports (-webkit-background-clip:text) {}
+
+.uk-text-center {
+  text-align: center !important;
+}
+
+.uk-background-default {
+  background-color: #fff;
+}
+
+[class*=uk-inline] {
+  display: inline-block;
+  position: relative;
+  max-width: 100%;
+  vertical-align: middle;
+  -webkit-backface-visibility: hidden;
+}
+
+.uk-border-circle {
+  border-radius: 50%;
+}
+
+.uk-border-rounded {
+  border-radius: 5px;
+}
+
+.uk-box-shadow-small {
+  box-shadow: 0 2px 8px rgba(88, 58, 188, .08);
+}
+
+@supports (filter:blur(0)) {}
+
+@-moz-document url-prefix() {}
+
+@supports (-ms-ime-align:auto) {}
+
+.uk-container .uk-container-xsmall.uk-padding-large {
+  padding: 30px;
+}
+
+@media (min-width:1200px) {
+  .uk-container .uk-container-xsmall.uk-padding-large {
+    padding: 70px;
+  }
+}
+
+.uk-flex {
+  display: flex;
+}
+
+.uk-flex::after,
+.uk-flex::before {
+  display: none;
+}
+
+.uk-flex-center {
+  justify-content: center;
+}
+
+.uk-flex-middle {
+  align-items: center;
+}
+
+.uk-margin-medium {
+  margin-bottom: 40px;
+}
+
+*+.uk-margin-medium {
+  margin-top: 40px !important;
+}
+
+.uk-padding-large {
+  padding: 30px;
+}
+
+@media (min-width:1200px) {
+  .uk-padding-large {
+    padding: 70px;
+  }
+}
+
+.uk-position-cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.uk-card-primary.uk-card-body .uk-heading-line>::after,
+.uk-card-primary.uk-card-body .uk-heading-line>::before,
+.uk-card-primary>:not([class*=uk-card-media]) .uk-heading-line>::after,
+.uk-card-primary>:not([class*=uk-card-media]) .uk-heading-line>::before,
+.uk-card-secondary.uk-card-body .uk-heading-line>::after,
+.uk-card-secondary.uk-card-body .uk-heading-line>::before,
+.uk-card-secondary>:not([class*=uk-card-media]) .uk-heading-line>::after,
+.uk-card-secondary>:not([class*=uk-card-media]) .uk-heading-line>::before,
+.uk-light .uk-heading-line>::after,
+.uk-light .uk-heading-line>::before,
+.uk-overlay-primary .uk-heading-line>::after,
+.uk-overlay-primary .uk-heading-line>::before,
+.uk-section-primary:not(.uk-preserve-color) .uk-heading-line>::after,
+.uk-section-primary:not(.uk-preserve-color) .uk-heading-line>::before,
+.uk-section-secondary:not(.uk-preserve-color) .uk-heading-line>::after,
+.uk-section-secondary:not(.uk-preserve-color) .uk-heading-line>::before,
+.uk-tile-primary:not(.uk-preserve-color) .uk-heading-line>::after,
+.uk-tile-primary:not(.uk-preserve-color) .uk-heading-line>::before,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-heading-line>::after,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-heading-line>::before {
+  border-bottom-color: rgba(255, 255, 255, .2);
+}
+
+.uk-card-primary.uk-card-body .uk-breadcrumb>*>:focus,
+.uk-card-primary.uk-card-body .uk-breadcrumb>*>:hover,
+.uk-card-primary>:not([class*=uk-card-media]) .uk-breadcrumb>*>:focus,
+.uk-card-primary>:not([class*=uk-card-media]) .uk-breadcrumb>*>:hover,
+.uk-card-secondary.uk-card-body .uk-breadcrumb>*>:focus,
+.uk-card-secondary.uk-card-body .uk-breadcrumb>*>:hover,
+.uk-card-secondary>:not([class*=uk-card-media]) .uk-breadcrumb>*>:focus,
+.uk-card-secondary>:not([class*=uk-card-media]) .uk-breadcrumb>*>:hover,
+.uk-light .uk-breadcrumb>*>:focus,
+.uk-light .uk-breadcrumb>*>:hover,
+.uk-overlay-primary .uk-breadcrumb>*>:focus,
+.uk-overlay-primary .uk-breadcrumb>*>:hover,
+.uk-section-primary:not(.uk-preserve-color) .uk-breadcrumb>*>:focus,
+.uk-section-primary:not(.uk-preserve-color) .uk-breadcrumb>*>:hover,
+.uk-section-secondary:not(.uk-preserve-color) .uk-breadcrumb>*>:focus,
+.uk-section-secondary:not(.uk-preserve-color) .uk-breadcrumb>*>:hover,
+.uk-tile-primary:not(.uk-preserve-color) .uk-breadcrumb>*>:focus,
+.uk-tile-primary:not(.uk-preserve-color) .uk-breadcrumb>*>:hover,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-breadcrumb>*>:focus,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-breadcrumb>*>:hover {
+  color: #fff;
+}
+
+.uk-card-primary.uk-card-body .uk-pagination>*>:focus,
+.uk-card-primary.uk-card-body .uk-pagination>*>:hover,
+.uk-card-primary>:not([class*=uk-card-media]) .uk-pagination>*>:focus,
+.uk-card-primary>:not([class*=uk-card-media]) .uk-pagination>*>:hover,
+.uk-card-secondary.uk-card-body .uk-pagination>*>:focus,
+.uk-card-secondary.uk-card-body .uk-pagination>*>:hover,
+.uk-card-secondary>:not([class*=uk-card-media]) .uk-pagination>*>:focus,
+.uk-card-secondary>:not([class*=uk-card-media]) .uk-pagination>*>:hover,
+.uk-light .uk-pagination>*>:focus,
+.uk-light .uk-pagination>*>:hover,
+.uk-overlay-primary .uk-pagination>*>:focus,
+.uk-overlay-primary .uk-pagination>*>:hover,
+.uk-section-primary:not(.uk-preserve-color) .uk-pagination>*>:focus,
+.uk-section-primary:not(.uk-preserve-color) .uk-pagination>*>:hover,
+.uk-section-secondary:not(.uk-preserve-color) .uk-pagination>*>:focus,
+.uk-section-secondary:not(.uk-preserve-color) .uk-pagination>*>:hover,
+.uk-tile-primary:not(.uk-preserve-color) .uk-pagination>*>:focus,
+.uk-tile-primary:not(.uk-preserve-color) .uk-pagination>*>:hover,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-pagination>*>:focus,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-pagination>*>:hover {
+  color: #fff;
+}
+
+.uk-card-primary.uk-card-body .uk-dotnav>*>:focus,
+.uk-card-primary.uk-card-body .uk-dotnav>*>:hover,
+.uk-card-primary>:not([class*=uk-card-media]) .uk-dotnav>*>:focus,
+.uk-card-primary>:not([class*=uk-card-media]) .uk-dotnav>*>:hover,
+.uk-card-secondary.uk-card-body .uk-dotnav>*>:focus,
+.uk-card-secondary.uk-card-body .uk-dotnav>*>:hover,
+.uk-card-secondary>:not([class*=uk-card-media]) .uk-dotnav>*>:focus,
+.uk-card-secondary>:not([class*=uk-card-media]) .uk-dotnav>*>:hover,
+.uk-light .uk-dotnav>*>:focus,
+.uk-light .uk-dotnav>*>:hover,
+.uk-overlay-primary .uk-dotnav>*>:focus,
+.uk-overlay-primary .uk-dotnav>*>:hover,
+.uk-section-primary:not(.uk-preserve-color) .uk-dotnav>*>:focus,
+.uk-section-primary:not(.uk-preserve-color) .uk-dotnav>*>:hover,
+.uk-section-secondary:not(.uk-preserve-color) .uk-dotnav>*>:focus,
+.uk-section-secondary:not(.uk-preserve-color) .uk-dotnav>*>:hover,
+.uk-tile-primary:not(.uk-preserve-color) .uk-dotnav>*>:focus,
+.uk-tile-primary:not(.uk-preserve-color) .uk-dotnav>*>:hover,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-dotnav>*>:focus,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-dotnav>*>:hover {
+  background-color: rgba(255, 255, 255, .9);
+  border-color: transparent;
+}
+
+.uk-card-primary.uk-card-body .uk-dotnav>*>:active,
+.uk-card-primary>:not([class*=uk-card-media]) .uk-dotnav>*>:active,
+.uk-card-secondary.uk-card-body .uk-dotnav>*>:active,
+.uk-card-secondary>:not([class*=uk-card-media]) .uk-dotnav>*>:active,
+.uk-light .uk-dotnav>*>:active,
+.uk-overlay-primary .uk-dotnav>*>:active,
+.uk-section-primary:not(.uk-preserve-color) .uk-dotnav>*>:active,
+.uk-section-secondary:not(.uk-preserve-color) .uk-dotnav>*>:active,
+.uk-tile-primary:not(.uk-preserve-color) .uk-dotnav>*>:active,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-dotnav>*>:active {
+  background-color: rgba(255, 255, 255, .5);
+  border-color: transparent;
+}
+
+@media print {
+
+  *,
+  ::after,
+  ::before {
+    background: 0 0 !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  @page {
+    margin: .5cm;
+  }
+
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h3 {
+    page-break-after: avoid;
+  }
+}
